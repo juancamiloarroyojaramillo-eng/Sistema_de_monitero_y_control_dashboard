@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Ambiental ESP32</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Sistema de monitoreo y control</h1>
+
+  <div class="dashboard">
+    <div class="card" id="card-temp">
+      <h2>🌡 Temperatura</h2>
+      <p id="temp">--</p>
+    </div>
+
+    <div class="card" id="card-ref">
+      <h2>🎯 Referencia</h2>
+      <p id="ref">--</p>
+    </div>
+
+    <div class="card" id="card-luz">
+      <h2>💡 Luz</h2>
+      <p id="luz">--</p>
+    </div>
+
+    <div class="card" id="card-estado">
+      <h2>⚙ Estado</h2>
+      <p id="estado">--</p>
+    </div>
+
+    <div class="card" id="card-servo">
+      <h2>🔄 Servo</h2>
+      <p id="servo">--</p>
+    </div>
+
+    <div class="card" id="card-led">
+      <h2>🚦 LED</h2>
+      <div id="led-indicador" class="led-circle"></div>
+      <p id="led">--</p>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <h2>📊 Temperatura en tiempo real</h2>
+    <canvas id="graficaTemp"></canvas>
+  </div>
+</div>
+
+<script src="datos.js"></script>
+</body>
+</html>
